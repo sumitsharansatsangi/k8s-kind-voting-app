@@ -15,13 +15,13 @@ spec:
         app: db
     spec:
       containers:
-      - image: postgres:15-alpine
+      - image: postgres:17-bookworm
         name: postgres
         env:
         - name: POSTGRES_USER
           value: postgres
         - name: POSTGRES_PASSWORD
-          value: postgres
+          value: postgres____password
         ports:
         - containerPort: 5432
           name: postgres
